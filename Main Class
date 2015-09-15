@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main (String[] args){
+		
+		int wid, len;
+		
+		Scanner scn = new Scanner(System.in);
+		
+		//Shape objShape = new Shape("NOSHAPE");
+		//System.out.println(objShape.ShapeNAme);
+
+		
+		System.out.println("Enter Width For Rect");
+		wid = scn.nextInt();
+		System.out.println("Enter Length For Rect");
+		len = scn.nextInt();
+		Rectangle objRectangle = new Rectangle(wid, len, "RECTANGLE");		
+		System.out.println(objRectangle.ShapeNAme);
+		
+		System.out.println("Enter Side For Sqaure");
+		wid = scn.nextInt();
+		Square objsquare = new Square(wid);		
+		System.out.println(objsquare.ShapeNAme);
+		
+	}
+
+}
